@@ -5,7 +5,7 @@ import pandas as pd
 app = FastAPI()
 
 # Load the XGBoost model
-with open('xgb_model.pkl', 'rb') as model_file:
+with open('xgboost-smote.pkl', 'rb') as model_file:
     loaded_model = pickle.load(model_file)
 
 # Function to preprocess new data
